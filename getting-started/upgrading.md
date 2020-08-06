@@ -3,7 +3,7 @@
 ## Upgrading 1.3 to 1.4
 
 {% hint style="info" %}
-Please take a look at our [prerequisites](../getting-started/prerequisites.md) before upgrading!
+Please take a look at our [prerequisites](prerequisites.md) before upgrading!
 {% endhint %}
 
 ### Update your Composer.json
@@ -28,3 +28,4 @@ Initialization has been moved from app.js to `rich_text_box` template, if you we
 ### Troubleshooting
 
 Be sure to ask us on our slack channel if you are experiencing any issues and we will try and assist. Thanks.
+

@@ -12,9 +12,12 @@ You can override any of the BREAD views for a **single** BREAD by creating a new
 Alternatively you can override the views for **all** BREADs by creating any of the above files under `resources/views/vendor/voyager/bread`
 
 ## Using custom Controllers
+
 #### Overriding submit button:
-You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:  
-```blade
+
+You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:
+
+```text
 @extends('voyager::bread.edit-add')
 @section('submit-buttons')
     @parent
@@ -112,9 +115,7 @@ class DataRow extends \TCG\Voyager\Models\DataRow
 }
 ```
 
-If the model you are overriding has an associated BREAD, go to the BREAD settings for the model you are overriding
-and replace the Model Name with your fully-qualified class-name. For example, if you are overriding the Voyager `Menu`
-model with your own `App\Menu` model:
+If the model you are overriding has an associated BREAD, go to the BREAD settings for the model you are overriding and replace the Model Name with your fully-qualified class-name. For example, if you are overriding the Voyager `Menu` model with your own `App\Menu` model:
 
 ![](../.gitbook/assets/bread_override_voyager_models.png)
 

@@ -31,7 +31,7 @@
 * [Меню и конструктор меню](core-concepts/menus-and-menu-builder.md)
 * [Менеджер базы данных](core-concepts/database-manager.md)
 * [Настройки](core-concepts/settings.md)
-* [Навигатор (Compass)](core-concepts/compass.md)
+* [Навигатор \(Compass\)](core-concepts/compass.md)
 * [Роли и разрешения](core-concepts/roles-and-permissions.md)
 * [Хелперы](core-concepts/helper-methods.md)
 * [Многоязычность](core-concepts/multilanguage.md)
@@ -53,3 +53,4 @@
 
 * [Using HTTPS on yours site](troubleshooting/using-https.md)
 * [Missing required parameter](troubleshooting/missing-required-parameter.md)
+

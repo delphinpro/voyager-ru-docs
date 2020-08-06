@@ -73,7 +73,7 @@
 При обновлении до новой версии voyager ассеты, расположенные в каталоге `/vendor/tcg/voyager/assets` могут потребовать перезаписи, поэтому, если вы хотите настроить любые стили, вам нужно продублировать этот каталог и указать новое местоположение вашего каталога asset\_path.
 {% endhint %}
 
-## Хранилище (Storage)
+## Хранилище \(Storage\)
 
 ```php
 <?php
@@ -120,7 +120,7 @@ By default Voyager is going to use the `public` local storage. You can additiona
 
 Узнать больше о мультиязычности [здесь](../core-concepts/multilanguage.md).
 
-## Панель управления (Dashboard)
+## Панель управления \(Dashboard\)
 
 ```php
 <?php

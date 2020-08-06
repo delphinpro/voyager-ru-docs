@@ -126,3 +126,4 @@ public function scopeCurrentUser($query)
 ![](../.gitbook/assets/bread_scope.jpg)
 
 После нажатия кнопки "Отправить" вы увидите только свои собственные посты.
+

@@ -140,8 +140,9 @@ You can customize the behaviour with the following options:
     <tr>
       <td style="text-align:left">hide_thumbnails</td>
       <td style="text-align:left">Hides known thumbnails and shows them as children of the parent image</td>
-      <td style="text-align:left">bool</td>
-      <td style="text-align:left">true</td>
+      <td
+      style="text-align:left">bool</td>
+        <td style="text-align:left">true</td>
     </tr>
     <tr>
       <td style="text-align:left">quality</td>
@@ -162,7 +163,7 @@ You can customize the behaviour with the following options:
   </tbody>
 </table>
 
-### Allowed types
+## Allowed types
 
 If you want your users to only be able to upload specific file-types you can do so by passing an object with mime-types to the \`allowed\` prop, for example:
 
@@ -176,7 +177,7 @@ or
 ["image/jpeg", "image/png", "image/bmp"]
 ```
 
-### Expressions
+## Expressions
 
 The `base_path` and `rename` can contain the following placeholders:
 
@@ -193,34 +194,39 @@ So a `base_path` can, for example, look like the following:
 }
 ```
 
-### Watermark
-A watermark can be added to uploaded images. To do so, you need to define a `source` property relative to Voyagers storage-disk.
-There are a few optional arguments you can use:  
+## Watermark
+
+A watermark can be added to uploaded images. To do so, you need to define a `source` property relative to Voyagers storage-disk. There are a few optional arguments you can use:  
 **position** the position where the watermark is placed. Can be:
-- top-left (default)
-- top
-- top-right
-- left
-- center
-- right
-- bottom-left
-- bottom
-- bottom-right
+
+* top-left \(default\)
+* top
+* top-right
+* left
+* center
+* right
+* bottom-left
+* bottom
+* bottom-right
 
 **x** Relative offset to the position on the x-axis. Defaults to 0
 
 **y** Relative offset to the position on the y-axis. Defaults to 0
 
-**size** the size (in percent) of the watermark relative to the image. Defaults to 15
+**size** the size \(in percent\) of the watermark relative to the image. Defaults to 15
 
-### Thumbnails
+## Thumbnails
+
 You can generate thumbnails for each uploaded image.  
 A thumbnail can be one of three types:
-#### Fit
+
+### Fit
+
 Fit combines cropping and resizing to find the best way to generate a thumbnail matching your dimensions.  
 You have to pass `width` and can pass `height` and `position`.  
 An example for `fit` would be:
-```
+
+```text
 {
     "thumbnails": [
         {
@@ -233,11 +239,13 @@ An example for `fit` would be:
     ]
 }
 ```
-#### Crop
-Crop an image by given dimensions and position.
-You have to pass `width` and `height` and can pass `x` and `y`.  
+
+### Crop
+
+Crop an image by given dimensions and position. You have to pass `width` and `height` and can pass `x` and `y`.  
 An example for `crop` would be:
-```
+
+```text
 {
     "thumbnails": [
         {
@@ -252,11 +260,12 @@ An example for `crop` would be:
 }
 ```
 
-#### Resize
-Resize the image to the given dimensions.
-You have to pass `width` and/or `height`.  
+### Resize
+
+Resize the image to the given dimensions. You have to pass `width` and/or `height`.  
 Some examples for `resize`:
-```
+
+```text
 {
     "thumbnails": [
         // Width will be 500px, height will be calculated based on the aspect-ratio
@@ -284,4 +293,5 @@ Some examples for `resize`:
 }
 ```
 
-A watermark can also be inserted into each thumbnail. Just define the [watermark-options](#watermark) on the parent and set `watermark` to `true` for each thumbnail you want to insert the watermark to.
+A watermark can also be inserted into each thumbnail. Just define the [watermark-options](media-picker.md#watermark) on the parent and set `watermark` to `true` for each thumbnail you want to insert the watermark to.
+

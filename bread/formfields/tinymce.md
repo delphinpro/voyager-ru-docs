@@ -1,6 +1,6 @@
 # TinyMCE
 
-If you want to customize TinyMCE within Voyager, you can do so by adding a [additional JS file](additional-css-js.md) to your config.
+If you want to customize TinyMCE within Voyager, you can do so by adding a [additional JS file](https://github.com/delphinpro/voyager-ru-docs/tree/22dd01ba25791a4ddaf9fd7e8365f20e49468ee7/bread/formfields/additional-css-js.md) to your config.
 
 In this file you have to define a function like
 
@@ -37,3 +37,4 @@ tinymce.init(window.voyagerTinyMCE.getConfig());
 ```
 
 For all possible variables, functions and configuration Options please refer to the [TinyMCE documentation](https://www.tinymce.com/docs/api/tinymce/tinymce.editor/).
+
