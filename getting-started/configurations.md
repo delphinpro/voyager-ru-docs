@@ -1,13 +1,13 @@
 # Конфигурации
 
-При установке Voyager вы найдете новый конфигурационный файл, расположенный по адресу `config/voyager.php`.  
-В этом файле вы можете найти различные опции для изменения конфигурации вашей установки Voyager.
+После установки Voyager вы найдете новый конфигурационный файл, расположенный по адресу `config/voyager.php`.  
+В этом файле вы можете найти различные опции для изменения конфигурации Voyager.
 
 {% hint style="info" %}
-Если вы кэшируете файлы конфигурации, пожалуйста, убедитесь, что запустили `php artisan config:clear` после любых ваших изменений.
+Если вы кэшируете файлы конфигурации, пожалуйста, убедитесь, что выполнили `php artisan config:clear` после любых ваших изменений.
 {% endhint %}
 
-Ниже мы глубоко погрузимся в конфигурационный файл и дадим детальное описание каждого набора конфигураций.
+Ниже мы глубоко погрузимся в конфигурационный файл и дадим детальное описание каждого блока опций.
 
 ## Пользователи
 
@@ -23,10 +23,10 @@
 ],
 ```
 
-**add\_default\_role\_on\_register:** Specify whether you would like to add the default role to any new user that is created.  
-**default\_role:** You can also specify what the **default\_role** is of the user.  
+**add\_default\_role\_on\_register:** Определяет, следует ли добавлять роль по умолчанию новому создаваемому пользователю.  
+**default\_role:** Определяет роль по умолчанию для пользователей.  
 **admin\_permission:** Разрешение, необходимое для просмотра панели администрирования..  
-**namespace:** The namespace of your apps User Class.  
+**namespace:** Пространство имен для вашего класса User.  
 **redirect:** Путь перенаправления после входа пользователя в систему.
 
 ## Контроллер
@@ -193,7 +193,7 @@ By default Voyager is going to use the `public` local storage. You can additiona
 Подробнее [здесь](../customization/additional-css-js.md).
 
 {% hint style="info" %}
-The path will be passed to Laravels [asset](https://laravel.com/docs/helpers#method-asset) function.
+Путь будет передан в функцию Laravel [asset](https://laravel.com/docs/helpers#method-asset).
 {% endhint %}
 
 ## Дополнительные файлы javascript

@@ -24,8 +24,6 @@ DB_PASSWORD=secret
 php artisan voyager:install
 ```
 
-If you prefer installing it with the dummy data run the following command:
-
 Если вы предпочитаете установить его с фиктивными данными, выполните следующую команду:
 
 ```bash
