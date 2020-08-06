@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Вступление](README.md)
-* [Оглавление](oglavlenie.md)
 * [С чего начать](getting-started/README.md)
   * [Что такое Voyager](getting-started/what-is-voyager.md)
   * [Требования](getting-started/prerequisites.md)
