@@ -1,8 +1,7 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Вступление](README.md)
 * [Оглавление](summary.md)
-* [Introduction](introduction.md)
 * [getting-started](getting-started/README.md)
   * [Upgrading](getting-started/upgrading.md)
   * [Что такое Voyager](getting-started/what-is-voyager.md)
