@@ -1,8 +1,8 @@
 # Переопределение файлов
 
-## Overriding BREAD Views
+## Переопределение представлений BREAD
 
-You can override any of the BREAD views for a **single** BREAD by creating a new folder in `resources/views/vendor/voyager/slug-name` where _slug-name_ is the _slug_ that you have assigned for that table. There are 4 files that you can override:
+Вы можете переопределить любое **отдельное** представление BREAD, создав новую папку в `resources/views/vendor/voyager/slug-name`, где _slug-name_ это _slug_, назначенный для данной таблицы. Есть 4 файла, которые можно переопределить.:
 
 * browse.blade.php
 * edit-add.blade.php
