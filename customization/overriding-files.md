@@ -15,9 +15,7 @@
 
 ### Переопределение кнопки отправки:
 
-Вы можете переопределить кнопку отправки без необходимости переопределять весь `edit-add.blade.php`, расширив раздел `submit-button`: 
-
-You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:
+Вы можете переопределить кнопку отправки без необходимости переопределять весь `edit-add.blade.php`, расширив раздел `submit-button`:
 
 ```text
 @extends('voyager::bread.edit-add')
@@ -42,7 +40,7 @@ class VoyagerCategoriesController extends \TCG\Voyager\Http\Controllers\VoyagerB
 }
 ```
 
-После этого перейдите к настройкам BREAD и заполните Имя контроллера (Controller Name) своим полным именем класса:
+После этого перейдите к настройкам BREAD и заполните Имя контроллера \(Controller Name\) своим полным именем класса:
 
 ![](../.gitbook/assets/bread_controller.png)
 
@@ -119,7 +117,7 @@ class DataRow extends \TCG\Voyager\Models\DataRow
 }
 ```
 
-Если переопределяемая вами модель имеет ассоциированный BREAD, перейдите к настройкам BREAD для переопределяемой модели и замените Имя модели (Model Name) на полное имя вашего класса. Например, если Вы переопределили модель Voyager `Menu` своей моделью `App\Menu`:
+Если переопределяемая вами модель имеет ассоциированный BREAD, перейдите к настройкам BREAD для переопределяемой модели и замените Имя модели \(Model Name\) на полное имя вашего класса. Например, если Вы переопределили модель Voyager `Menu` своей моделью `App\Menu`:
 
 ![](../.gitbook/assets/bread_override_voyager_models.png)
 
