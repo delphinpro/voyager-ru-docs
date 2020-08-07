@@ -14,16 +14,15 @@
 
 * [Введение](bread/introduction.md)
 * [Отношения](bread/relationships.md)
-* [Formfields](bread/formfields/README.md)
-  * [checkbox](bread/formfields/checkbox.md)
+* [formfields](bread/formfields/README.md)
+  * [Number](bread/formfields/number.md)
   * [Coordinates](bread/formfields/coordinates.md)
-  * [Date & Timestamp](bread/formfields/date-time.md)
-  * [Dropdown](bread/formfields/dropdown.md)
+  * [checkbox](bread/formfields/checkbox.md)
+  * [TinyMCE](bread/formfields/tinymce.md)
   * [Images](bread/formfields/images.md)
   * [Media Picker](bread/formfields/media-picker.md)
-  * [Number](bread/formfields/number.md)
-  * [TinyMCE](bread/formfields/tinymce.md)
-  * [Formfields](bread/formfields/introduction.md)
+  * [Date & Timestamp](bread/formfields/date-time.md)
+  * [Dropdown](bread/formfields/dropdown.md)
 
 ## Основные концепции <a id="core-concepts"></a>
 
