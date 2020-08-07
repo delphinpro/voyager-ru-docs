@@ -2,18 +2,20 @@
 
 ## Переопределение представлений BREAD
 
-Вы можете переопределить любое **отдельное** представление BREAD, создав новую папку в `resources/views/vendor/voyager/slug-name`, где _slug-name_ это _slug_, назначенный для данной таблицы. Есть 4 файла, которые можно переопределить.:
+Вы можете переопределить любое представление BREAD для **отдельного** BREAD, создав новую папку в `resources/views/vendor/voyager/slug-name`, где _slug-name_ это _slug_, назначенный для данной таблицы. Есть 4 файла, которые можно переопределить.:
 
 * browse.blade.php
 * edit-add.blade.php
 * read.blade.php
 * order.blade.php
 
-Alternatively you can override the views for **all** BREADs by creating any of the above files under `resources/views/vendor/voyager/bread`
+Или же вы можете переопределить представления для **всех** BREADs, создав любой из вышеперечисленных файлов в каталоге `resources/views/vendor/voyager/bread`.
 
-## Using custom Controllers
+## Использование пользовательских контроллеров
 
-#### Overriding submit button:
+### Переопределение кнопки отправки:
+
+Вы можете переопределить кнопку отправки без необходимости переопределять весь `edit-add.blade.php`, расширив раздел `submit-button`: 
 
 You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:
 
@@ -25,9 +27,9 @@ You can override the submit button without the need to override the whole `edit-
 @endsection
 ```
 
-### Using custom Controllers
+### Использование пользовательских контроллеров
 
-You can override the controller for a single BREAD by creating a controller which extends Voyagers controller, for example:
+Вы можете переопределить контроллер для отдельного BREAD, создав контроллер, расширяющий контроллер Voyagers, например:
 
 ```php
 <?php
@@ -40,20 +42,20 @@ class VoyagerCategoriesController extends \TCG\Voyager\Http\Controllers\VoyagerB
 }
 ```
 
-After that go to the BREAD-settings and fill in the Controller Name with your fully-qualified class-name:
+После этого перейдите к настройкам BREAD и заполните Имя контроллера (Controller Name) своим полным именем класса:
 
 ![](../.gitbook/assets/bread_controller.png)
 
-You can now override all methods from the [VoyagerBaseController](https://github.com/the-control-group/voyager/blob/1.1/src/Http/Controllers/VoyagerBaseController.php)
+Теперь вы можете переопределить все методы из [VoyagerBaseController](https://github.com/the-control-group/voyager/blob/1.1/src/Http/Controllers/VoyagerBaseController.php).
 
-## Overriding Voyagers Controllers
+## Переопределение контроллеров Voyagers
 
 {% hint style="danger" %}
-**Only use this method if you know what you are doing**  
-We don't recommend or support overriding all controllers as you won't get any code-changes made in future updates.
+**Используйте этот метод только в том случае, если вы знаете, что делаете**  
+Мы не рекомендуем и не поддерживаем переопределение всех контроллеров, так как в будущих обновлениях вы не получите никаких изменений кода.
 {% endhint %}
 
-If you want to override any of Voyagers core controllers you first have to change your config file `config/voyager.php`:
+Если вы хотите переопределить любой из основных контроллеров Voyager, вам сначала нужно изменить ваш конфигурационный файл `config/voyager.php`:
 
 ```php
 /*
@@ -70,18 +72,20 @@ If you want to override any of Voyagers core controllers you first have to chang
 ],
 ```
 
-Then run `php artisan voyager:controllers`, Voyager will now use the child controllers which will be created at `App/Http/Controllers/Voyager`
+Затем выполните команду `php artisan voyager:controllers`, после чего Voyager будет использовать контроллеры, созданные в `App/Http/Controllers/Voyager`.
 
-## Overriding Voyager-Models
+## Переопределение моделей Voyager
 
-You are also able to override Voyagers models if you need to.  
-To do so, you need to add the following to your AppServiceProviders register method:
+Вы также можете переопределить модели Voyager, если это необходимо.  
+Для этого в метод register в вашем AppServiceProviders необходимо добавить следующее:
 
 ```php
 Voyager::useModel($name, $object);
 ```
 
-Where **name** is the class-name of the model and **object** the fully-qualified name of your custom model. For example:
+Где **name** — это имя класса модели,  
+а **object** — полное имя вашей пользовательской модели.  
+Например:
 
 ```php
 <?php
@@ -102,7 +106,7 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-The next step is to create your model and make it extend the original model. In case of `DataRow`:
+Следующий шаг — создать свою модель и расширить ее от оригинальной. В случае `DataRow`:
 
 ```php
 <?php
@@ -115,7 +119,7 @@ class DataRow extends \TCG\Voyager\Models\DataRow
 }
 ```
 
-If the model you are overriding has an associated BREAD, go to the BREAD settings for the model you are overriding and replace the Model Name with your fully-qualified class-name. For example, if you are overriding the Voyager `Menu` model with your own `App\Menu` model:
+Если переопределяемая вами модель имеет ассоциированный BREAD, перейдите к настройкам BREAD для переопределяемой модели и замените Имя модели (Model Name) на полное имя вашего класса. Например, если Вы переопределили модель Voyager `Menu` своей моделью `App\Menu`:
 
 ![](../.gitbook/assets/bread_override_voyager_models.png)
 
