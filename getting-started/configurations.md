@@ -118,7 +118,7 @@ By default Voyager is going to use the `public` local storage. You can additiona
 
 Вы можете указать, хотите ли **включить \(enabled\)** многоязычность. Вы можете определить язык **по умолчанию \(default\)** и все поддерживаемые языки \(**locales**\)
 
-Узнать больше о мультиязычности [здесь](../osnovnye-koncepcii/multilanguage.md).
+Узнать больше о мультиязычности [здесь](../core-concepts/multilanguage.md).
 
 ## Панель управления \(Dashboard\)
 
@@ -190,7 +190,7 @@ By default Voyager is going to use the `public` local storage. You can additiona
 
 Вы можете добавить свои собственные таблицы стилей, которые будут включены в панель администратора Voyager. Это означает, что вы можете технически создать совершенно новую тему для Voyager, добавив свою собственную таблицу стилей.
 
-Подробнее [здесь](../personalizaciya/additional-css-js.md).
+Подробнее [здесь](../customization/additional-css-js.md).
 
 {% hint style="info" %}
 Путь будет передан в функцию Laravel [asset](https://laravel.com/docs/helpers#method-asset).
@@ -208,7 +208,7 @@ By default Voyager is going to use the `public` local storage. You can additiona
 
 То же самое касается и этой конфигурации. Вы можете добавить свой собственный javascript, который будет выполняться в панели администрирования Voyager. Добавьте столько javascript-файлов, сколько необходимо.
 
-Подробнее [здесь](../personalizaciya/additional-css-js.md).
+Подробнее [здесь](../customization/additional-css-js.md).
 
 ## Google Maps
 

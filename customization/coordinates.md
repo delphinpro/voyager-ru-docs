@@ -26,7 +26,7 @@ Now you can go to the tables BREAD-settings and set your field to be `Coordinate
 After that you will get a Map where you can select your Coordinates.
 
 {% hint style="info" %}
-Make sure to set the Google Maps API-Key in your [configuration](../s-chego-nachat/configurations.md#google-maps).  
+Make sure to set the Google Maps API-Key in your [configuration](../getting-started/configurations.md#google-maps).  
 This is also the place where you can define the default location of your map.
 {% endhint %}
 
