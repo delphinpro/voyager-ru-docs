@@ -1,4 +1,4 @@
-# Dropdown
+# Выпадающий список \(Dropdown\)
 
 ```php
 {

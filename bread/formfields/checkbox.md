@@ -1,4 +1,4 @@
-# checkbox
+# Флажки \(Checkbox\)
 
 ## Checkbox
 

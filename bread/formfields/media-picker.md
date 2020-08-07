@@ -1,4 +1,4 @@
-# Media Picker
+# Загрузка файлов \(Media Picker\)
 
 The media picker formfield allows you to upload/delete/select files directly from the media-manager.  
 You can customize the behaviour with the following options:

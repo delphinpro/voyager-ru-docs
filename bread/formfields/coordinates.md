@@ -1,4 +1,4 @@
-# Coordinates
+# Координаты
 
 ## Optional Details
 

@@ -1,4 +1,4 @@
-# Date & Timestamp
+# Дата и время
 
 ```php
 {
