@@ -1,14 +1,14 @@
-# Оглавление
+# Table of contents
 
 * [Вступление](README.md)
 
 ## С чего начать
 
-* [Что такое Voyager](getting-started/what-is-voyager.md)
-* [Требования](getting-started/prerequisites.md)
-* [Установка](getting-started/installation.md)
-* [Upgrading](getting-started/upgrading.md)
-* [Конфигурации](getting-started/configurations.md)
+* [Что такое Voyager](s-chego-nachat/what-is-voyager.md)
+* [Требования](s-chego-nachat/prerequisites.md)
+* [Установка](s-chego-nachat/installation.md)
+* [Upgrading](s-chego-nachat/upgrading.md)
+* [Конфигурации](s-chego-nachat/configurations.md)
 
 ## BREAD
 
@@ -27,28 +27,28 @@
 
 ## Основные концепции
 
-* [Маршрутизация](core-concepts/routing.md)
-* [Медиа-менеджер](core-concepts/media-manager.md)
-* [Меню и конструктор меню](core-concepts/menus-and-menu-builder.md)
-* [Управление базой данных](core-concepts/database-manager.md)
-* [Настройки](core-concepts/settings.md)
-* [Навигатор \(Compass\)](core-concepts/compass.md)
-* [Роли и разрешения](core-concepts/roles-and-permissions.md)
-* [Helper methods](core-concepts/helper-methods.md)
-* [Многоязычность](core-concepts/multilanguage.md)
+* [Маршрутизация](osnovnye-koncepcii/routing.md)
+* [Медиа-менеджер](osnovnye-koncepcii/media-manager.md)
+* [Меню и конструктор меню](osnovnye-koncepcii/menus-and-menu-builder.md)
+* [Управление базой данных](osnovnye-koncepcii/database-manager.md)
+* [Настройки](osnovnye-koncepcii/settings.md)
+* [Навигатор \(Compass\)](osnovnye-koncepcii/compass.md)
+* [Роли и разрешения](osnovnye-koncepcii/roles-and-permissions.md)
+* [Helper methods](osnovnye-koncepcii/helper-methods.md)
+* [Многоязычность](osnovnye-koncepcii/multilanguage.md)
 
 ## Персонализация
 
-* [Переопределение файлов](customization/overriding-files.md)
-* [Overriding Routes](customization/overriding-routes.md)
-* [Additional CSS and JS](customization/additional-css-js.md)
-* [Enabling Soft-Delete](customization/enabling-soft-delete.md)
-* [Custom relationship attributes](customization/custom-realtionship-attributes.md)
-* [Adding custom Formfields](customization/adding-custom-formfields.md)
-* [Coordinates](customization/coordinates.md)
-* [BREAD accessors](customization/bread-accessors.md)
-* [custom-guard](customization/custom-guard.md)
-* [Action buttons](customization/action-buttons.md)
+* [Переопределение файлов](personalizaciya/overriding-files.md)
+* [Переопределение маршрутов](personalizaciya/overriding-routes.md)
+* [Additional CSS and JS](personalizaciya/additional-css-js.md)
+* [Enabling Soft-Delete](personalizaciya/enabling-soft-delete.md)
+* [Custom relationship attributes](personalizaciya/custom-realtionship-attributes.md)
+* [Adding custom Formfields](personalizaciya/adding-custom-formfields.md)
+* [Coordinates](personalizaciya/coordinates.md)
+* [BREAD accessors](personalizaciya/bread-accessors.md)
+* [custom-guard](personalizaciya/custom-guard.md)
+* [Action buttons](personalizaciya/action-buttons.md)
 
 ## troubleshooting
 
