@@ -71,8 +71,11 @@ php artisan voyager:admin your@email.com --create
 
 Первое, что вам нужно сделать, это опубликовать ассеты, которые поставляются с Voyager. Вы можете сделать это, выполнив следующие команды.:
 
-```bash
+```php
 php artisan vendor:publish --provider="TCG\Voyager\VoyagerServiceProvider"
+```
+
+```bash
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
 ```
 
